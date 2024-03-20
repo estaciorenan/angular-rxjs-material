@@ -6,12 +6,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
-  imports: [
-    MatSliderModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
-  ],
   exports: [
     MatSliderModule,
     MatToolbarModule,
