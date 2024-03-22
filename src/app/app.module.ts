@@ -16,13 +16,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core'
 
 import { ButtonsIconsComponent } from './components/buttons-icons/buttons-icons.component';
 import { FormFieldInputComponent } from './components/formField-input/formField-input.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-
-
+import { TabsComponent } from './components/tabs/tabs.component';
+import { DatePickerComponent } from './components/datePicker/datePicker.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     ButtonsIconsComponent,
     FormFieldInputComponent,
     ProgressSpinnerComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    TabsComponent,
+    DatePickerComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,11 +52,18 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MatListModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatTabsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+
   ],
   providers: [
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: 'outline', floatLabel: 'always' }
+    },
+    {
+      provide: MAT_DATE_LOCALE, useValue: "pt-br"
     }
   ],
   bootstrap: [AppComponent]
