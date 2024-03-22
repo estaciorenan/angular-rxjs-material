@@ -6,9 +6,18 @@
     [fixedInViewport]="true"
     [mode]="sidenavMode"
   >
+    <mat-toolbar> Navigation </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/voltar">Home</a>
+      <a mat-list-item href="/buttonIcon">Button Icons</a>
+      <a mat-list-item href="/formfield">Form Field Input</a>
+      <a mat-list-item href="/progress">Progress Bar</a>
+      <a mat-list-item href="/spinner">Spinner</a>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
+    <app-progress-spinner></app-progress-spinner>
     <mat-toolbar>
       <button mat-icon-button class="example-icon" (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
@@ -30,7 +39,6 @@
         <mat-icon>share</mat-icon>
       </button>
     </mat-toolbar>
-    <app-formField-input></app-formField-input>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<router-outlet></router-outlet>
