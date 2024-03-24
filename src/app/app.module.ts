@@ -18,7 +18,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core'
+import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { ButtonsIconsComponent } from './components/buttons-icons/buttons-icons.component';
 import { FormFieldInputComponent } from './components/formField-input/formField-input.component';
@@ -26,6 +28,9 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/datePicker/datePicker.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +41,8 @@ import { DatePickerComponent } from './components/datePicker/datePicker.componen
     SpinnerComponent,
     TabsComponent,
     DatePickerComponent,
+    SnackbarComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +62,8 @@ import { DatePickerComponent } from './components/datePicker/datePicker.componen
     MatTabsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-
+    MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [
     {
