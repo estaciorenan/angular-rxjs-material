@@ -30,6 +30,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/datePicker/datePicker.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { FormFieldModalComponent } from './components/dialog/formField-modal/formField-modal.component';
+
 
 
 @NgModule({
@@ -43,6 +45,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
     DatePickerComponent,
     SnackbarComponent,
     DialogComponent,
+    FormFieldModalComponent,
   ],
   imports: [
     BrowserModule,

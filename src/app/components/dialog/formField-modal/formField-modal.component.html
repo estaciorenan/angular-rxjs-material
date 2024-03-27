@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Inputs</h1>
+
+<div mat-dialog-content>
+  <div mat-form-field>
+    <div mat-label>Name</div>
+    <input type="text" matInput placeholder="nome" [(ngModel)]="value" />
+    <button
+      *ngIf="value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="value = ''"
+    >
+      <div mat-icon matSuffix>star</div>
+    </button>
+
+    <div mat-label>Name</div>
+    <input
+      type="text"
+      matInput
+      placeholder="nome"
+      maxlength="10"
+      [(ngModel)]="userName"
+    />
+    <div mat-hint align="end">Apenas {{ userName.length }}/10 caracteres</div>
+    <button
+      *ngIf="value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="userName = ''"
+    >
+      <div mat-icon matSuffix>star</div>
+    </button>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button (click)="closeDialog()">Fechar</button>
+</div>
