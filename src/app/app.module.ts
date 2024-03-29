@@ -21,6 +21,11 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+
 
 import { ButtonsIconsComponent } from './components/buttons-icons/buttons-icons.component';
 import { FormFieldInputComponent } from './components/formField-input/formField-input.component';
@@ -31,7 +36,7 @@ import { DatePickerComponent } from './components/datePicker/datePicker.componen
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { FormFieldModalComponent } from './components/dialog/formField-modal/formField-modal.component';
-
+import { DatatableComponent } from './components/datatable/datatable.component';
 
 
 @NgModule({
@@ -46,6 +51,7 @@ import { FormFieldModalComponent } from './components/dialog/formField-modal/for
     SnackbarComponent,
     DialogComponent,
     FormFieldModalComponent,
+    DatatableComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,6 +73,10 @@ import { FormFieldModalComponent } from './components/dialog/formField-modal/for
     MatNativeDateModule,
     MatSnackBarModule,
     MatDialogModule,
+    MatTableModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [
     {

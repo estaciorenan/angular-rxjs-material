@@ -8,6 +8,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/datePicker/datePicker.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
 
 const routes: Routes = [
   { path: 'voltar', redirectTo: '', pathMatch: 'full' },
@@ -18,8 +19,8 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'datepicker', component: DatePickerComponent },
   { path: 'snackbar', component: SnackbarComponent },
-  { path: 'dialog', component: DialogComponent }
-
+  { path: 'dialog', component: DialogComponent },
+  { path: 'datatable', component: DatatableComponent }
 ];
 
 @NgModule({
